@@ -1033,22 +1033,12 @@ window.addEventListener('load', () => {
     const navToggleBtn = document.querySelector('[data-nav-toggle-btn]');
     const navbar = document.querySelector('.navbar');
 
-    if (navToggleBtn && navbar) {
-      navToggleBtn.addEventListener('click', () => {
-        // Toggle active class on both the button and navbar
-        navToggleBtn.classList.toggle('active');
-        navbar.classList.toggle('active');
+   if (navToggleBtn) {
+  navToggleBtn.addEventListener('click', () => {
+    window.location.href = 'index.html'; // Redirect to home page
+  });
+}
 
-        // Ensure proper icon display
-        const openIcon = navToggleBtn.querySelector('.open');
-        const closeIcon = navToggleBtn.querySelector('.close');
-
-        if (openIcon && closeIcon) {
-          openIcon.style.display = navbar.classList.contains('active') ? 'none' : 'block';
-          closeIcon.style.display = navbar.classList.contains('active') ? 'block' : 'none';
-        }
-      });
-    }
   });
   document.getElementById('newsletterForm').addEventListener('submit', function (e) {
       e.preventDefault();
