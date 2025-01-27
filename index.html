@@ -135,6 +135,18 @@
     ]
   }
   </script>
+  <script>
+  (function (f, s, o, n) {
+    f._vercelAnalytics = f._vercelAnalytics || [];
+    f._vercelAnalytics.push(n);
+    if (f[n]) return;
+    f[n] = function () { f._vercelAnalytics.push(arguments); };
+    var e = s.createElement(o), t = s.getElementsByTagName(o)[0];
+    e.async = true; e.src = "https://analytics.vercel-insights.com/script.js";
+    t.parentNode.insertBefore(e, t);
+  })(window, document, "script", "vercelAnalytics");
+</script>
+
 
 
 
